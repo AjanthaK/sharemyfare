@@ -74,15 +74,6 @@ function startTimer(){
           }
         }
       } else if(mode==15){
-        if(minutesLabel.innerHTML == "01"){
-          if (document.getElementById("Message-Container").style.visibility != "visible") {
-            document.getElementById("msg-topic").innerHTML = "Oopz!"
-            document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
-            document.getElementById("msg-img").src = "img/cry.gif"
-            toggleVisablity('Message-Container');
-          }
-        }
-      } else if(mode==25){
         if(minutesLabel.innerHTML == "02"){
           if (document.getElementById("Message-Container").style.visibility != "visible") {
             document.getElementById("msg-topic").innerHTML = "Oopz!"
@@ -91,8 +82,17 @@ function startTimer(){
             toggleVisablity('Message-Container');
           }
         }
+      } else if(mode==25){
+        if(minutesLabel.innerHTML == "05"){
+          if (document.getElementById("Message-Container").style.visibility != "visible") {
+            document.getElementById("msg-topic").innerHTML = "Oopz!"
+            document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
+            document.getElementById("msg-img").src = "img/cry.gif"
+            toggleVisablity('Message-Container');
+          }
+        }
       } else if(mode==38){
-        if(minutesLabel.innerHTML == "03"){
+        if(minutesLabel.innerHTML == "10"){
           if (document.getElementById("Message-Container").style.visibility != "visible") {
             document.getElementById("msg-topic").innerHTML = "Oopz!"
             document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."

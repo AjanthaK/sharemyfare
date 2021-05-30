@@ -44,12 +44,12 @@ function toggleVisablity(id) {
   makeMaze();
   if (document.getElementById(id).style.visibility == "visible") {
     document.getElementById(id).style.visibility = "hidden";
+    document.getElementById("msg-topic").innerHTML = "Congratulations!"
+    document.getElementById("msg-desc").innerHTML = "You shared some food with the hungry boy..."
+    document.getElementById("msg-img").src = "img/sharing.gif"
   } else {
     document.getElementById(id).style.visibility = "visible";
   }
-  document.getElementById("msg-topic").innerHTML = "Congratulations!"
-  document.getElementById("msg-desc").innerHTML = "You shared some food with the hungry boy..."
-  document.getElementById("msg-img").src = "img/sharing.gif"
 }
 
 function startTimer(){
@@ -66,31 +66,39 @@ function startTimer(){
       minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
       if(mode==10){
         if(secondsLabel.innerHTML == "30"){
-          document.getElementById("msg-topic").innerHTML = "Oopz!"
-          document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
-          document.getElementById("msg-img").src = "img/cry.gif"
-          toggleVisablity('Message-Container');
+          if (document.getElementById("Message-Container").style.visibility != "visible") {
+            document.getElementById("msg-topic").innerHTML = "Oopz!"
+            document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
+            document.getElementById("msg-img").src = "img/cry.gif"
+            toggleVisablity('Message-Container');
+          }
         }
       } else if(mode==15){
         if(minutesLabel.innerHTML == "01"){
-          document.getElementById("msg-topic").innerHTML = "Oopz!"
-          document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
-          document.getElementById("msg-img").src = "img/cry.gif"
-          toggleVisablity('Message-Container');
+          if (document.getElementById("Message-Container").style.visibility != "visible") {
+            document.getElementById("msg-topic").innerHTML = "Oopz!"
+            document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
+            document.getElementById("msg-img").src = "img/cry.gif"
+            toggleVisablity('Message-Container');
+          }
         }
       } else if(mode==25){
         if(minutesLabel.innerHTML == "02"){
-          document.getElementById("msg-topic").innerHTML = "Oopz!"
-          document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
-          document.getElementById("msg-img").src = "img/cry.gif"
-          toggleVisablity('Message-Container');
+          if (document.getElementById("Message-Container").style.visibility != "visible") {
+            document.getElementById("msg-topic").innerHTML = "Oopz!"
+            document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
+            document.getElementById("msg-img").src = "img/cry.gif"
+            toggleVisablity('Message-Container');
+          }
         }
       } else if(mode==38){
         if(minutesLabel.innerHTML == "03"){
-          document.getElementById("msg-topic").innerHTML = "Oopz!"
-          document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
-          document.getElementById("msg-img").src = "img/cry.gif"
-          toggleVisablity('Message-Container');
+          if (document.getElementById("Message-Container").style.visibility != "visible") {
+            document.getElementById("msg-topic").innerHTML = "Oopz!"
+            document.getElementById("msg-desc").innerHTML = "You failed to feed the hungry boy..."
+            document.getElementById("msg-img").src = "img/cry.gif"
+            toggleVisablity('Message-Container');
+          }
         }
       }
   }

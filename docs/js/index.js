@@ -47,6 +47,9 @@ function toggleVisablity(id) {
   } else {
     document.getElementById(id).style.visibility = "visible";
   }
+  document.getElementById("msg-topic").innerHTML = "Congratulations!"
+  document.getElementById("msg-desc").innerHTML = "You shared some food with the hungry boy..."
+  document.getElementById("msg-img").src = "img/sharing.gif"
 }
 
 function startTimer(){

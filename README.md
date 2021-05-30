@@ -1,2 +1,4 @@
 # sharemyfare
-HACK-Cade Hackathon Project
+HACK-Cade Hackathon - Major League Hacking
+<br><br>
+Project inside the docs directory.
